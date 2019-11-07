@@ -1,6 +1,14 @@
 
 module.exports = {
   mode: 'universal',
+
+  generate: {
+    routes: [
+      '/posts/balut',
+      '/posts/whereIsIt',
+      '/posts/how'
+    ]
+  },
   /*
   ** Headers of the page
   */
@@ -30,6 +38,7 @@ module.exports = {
   */
   plugins: [
     '@/plugins/element-ui'
+    // https://nuxtjs.org/api/configuration-css
   ],
   /*
   ** Nuxt.js dev-modules
